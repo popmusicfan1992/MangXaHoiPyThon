@@ -176,7 +176,7 @@ class Check(View):
             pass
         try:
             MyUser.objects.get(email=email)
-            return HttpResponse('Địa chỉ email đã tồn tại trong hệ thống, hãy thử email khác')
+            return HttpResponse('Địa chỉ email đã tồn tại trong hệ thống, Hãy check email khác')
         except:
             pass
         return HttpResponse('')
